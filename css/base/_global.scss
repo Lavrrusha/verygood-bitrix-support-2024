@@ -12,16 +12,16 @@ html *::after {
 
 body {
   margin: 0;
-  min-width: ;
-  font-size: ;
-  font-family: ;
+  // min-width: ;
+  // font-size: ;
+  font-family: 'Inter', sans-serif;
   position: relative;
   overflow-x: hidden;
-  background-color: ;
-  color: ;
-  font-style: ;
-  font-weight: ;
-  line-height: ;
+  // background-color: ;
+  // color: ;
+  // font-style: ;
+  // font-weight: ;
+  // line-height: ;
   min-height: 100%;
 
   @media (max-width: 767px) {
@@ -34,5 +34,3 @@ img {
   max-width: 100%;
   display: block;
 }
-
-

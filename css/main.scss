@@ -1,11 +1,9 @@
-@import "fonts";
-@import "global";
-@import "visually-hidden";
-@import "button";
-@import "title";
-@import "first-screen";
-@import "benefits";
-@import "services";
-@import "price";
-
-
+@import "base/fonts";
+@import "base/global";
+@import "utils/visually-hidden";
+@import "blocks/button";
+@import "blocks/title";
+@import "sections/first-screen";
+@import "sections/benefits";
+@import "sections/services";
+@import "sections/services";
