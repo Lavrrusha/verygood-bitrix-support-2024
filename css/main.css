@@ -1,3 +1,7 @@
+:root {
+  --colorButton: #5B48FC;
+}
+
 @font-face {
   font-family: "Inter Medium";
   src: url("/fonts/Inter/Inter-Medium.woff2") format("woff2");
@@ -83,7 +87,7 @@ input[type=radio].visually-hidden {
   font-size: 18px;
   line-height: 128%;
   border-radius: 32px;
-  background: var(--bluviolet);
+  background: var(--colorButton);
   padding: 21px 0;
 }
 

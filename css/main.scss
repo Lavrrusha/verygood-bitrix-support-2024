@@ -1,3 +1,7 @@
+:root {
+  --colorButton: #5B48FC;
+}
+
 // Базовые стили
 
 @import "./base/fonts";
@@ -11,7 +15,6 @@
 
 @import "./blocks/button";
 @import "./blocks/title";
-@import "./base/vars";
 
 // Смысловые секции
 
