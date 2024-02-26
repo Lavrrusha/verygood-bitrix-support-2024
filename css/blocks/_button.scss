@@ -1,3 +1,5 @@
+@import "./css/base/vars";
+
 .button {
   text-decoration: none;
   display: block;
@@ -8,6 +10,6 @@
   font-size: 18px;
   line-height: 128%;
   border-radius: 32px;
-  background: var(--bluviolet);
+  background: $ColorButton;
   padding: 21px 0;
 }
