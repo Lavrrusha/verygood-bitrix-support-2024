@@ -15,11 +15,23 @@
   <!-- подключи стилевой файл проекта  -->
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
+
 </head>
 
 <body>
   <!-- ШАПКА  -->
-  <header class="header"></header>
+  <header class="header">
+    <a href="#"><img class="header__logotype" src="./img/logotype.jpg" alt="логотип"></a>
+    <a href="tel:+79054754647">+7 905 475 46 47</a>
+    <ul class="list-social">
+      <li class="list-social__item">
+        <img class="list-social__image" src="./svg/icon-telegram.svg" alt="telegram"><span class="list-social__min-width">Написать telegram</span>
+      </li>
+      <li class="list-social__item">
+        <img class="list-social__image" src="./svg/icon-whatsapp.svg" alt="whatsapp"><span class="list-social__min-width">Обсудить whatsapp</span>
+      </li>
+    </ul>
+  </header>
   <!-- КОНЕЦ ШАПКА  -->
 
   <!-- ОСНОВНОЙ КОНТЕНТ  -->
@@ -152,7 +164,20 @@
 
 
     <!-- ОБСУДИТЬ ДЕТАЛИ  -->
-    <section class="discuss"></section>
+    <section class="discuss">
+      <h2 class="title">Обсудить детали</h2>
+      <form class="form" action="#" method="post">
+        <label class="form__label" for="username">Как вас зовут: <input type="text" id="username" placeholder="Ваше имя" required></label>
+        <label class="form__label" for="email">E-mail: <input type="email" id="mail" placeholder="Электронная почта" required></label>
+        <label class="form__label" for="tel">Телефон: <input type="tel" id="tel" placeholder="Ваш телефон" required></label>
+        <label class="form__label" for="message">Комментарий:</label><textarea id="message" cols="" rows="">Ваш комментарий</textarea>
+        <input class="form__input" type="checkbox" id="assent" required>
+        <label for="assent">Я выражаю <a href="#" target="_blank">согласие на обработку персональных данных</a></label>
+        <input class="form__input" type="checkbox" id="checkbox-active" required>
+        <label for="checkbox-active">Активный чекбокс</label>
+        <button class="form__button" type="submit">Отправить</button>
+      </form>
+    </section>
     <!-- КОНЕЦ ОБСУДИТЬ ДЕТАЛИ  -->
 
   </main>
