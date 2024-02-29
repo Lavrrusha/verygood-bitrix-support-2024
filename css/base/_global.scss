@@ -12,20 +12,20 @@ html *::after {
 
 body {
   margin: 0;
-  // min-width: ;
-  // font-size: ;
+  min-width: 375px;
+  font-size: 18px;
   font-family: 'Inter', sans-serif;
   position: relative;
   overflow-x: hidden;
-  // background-color: ;
-  // color: ;
-  // font-style: ;
-  // font-weight: ;
-  // line-height: ;
+  background-color: var(--colorWidth);
+  color: var(--colorText-08);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.33;
   min-height: 100%;
 
-  @media (max-width: 767px) {
-    font-size: 14px;
+  @media (max-width: 768px) {
+    font-size: 16px;
   }
 }
 
@@ -33,4 +33,17 @@ img {
   height: auto;
   max-width: 100%;
   display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.5;
+  color: var(--colorText);
 }

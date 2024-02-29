@@ -32,14 +32,14 @@
       </svg>
     </a>
     <a class="header__phone" href="tel:+79054754647">+7 905 475 46 47</a>
-    <ul class="list-social">
-      <li class="list-social__item">
-        <img class="list-social__image" src="./svg/icon-telegram.svg" alt="telegram"><span
-          class="list-social__min-width">Написать telegram</span>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a href="#"><img class="social-list__image" src="./svg/icon-telegram.svg" alt="telegram"><span>Написать
+            telegram</span></a>
       </li>
       <li class="list-social__item">
-        <img class="list-social__image" src="./svg/icon-whatsapp.svg" alt="whatsapp"><span
-          class="list-social__min-width">Обсудить whatsapp</span>
+        <a href="#"><img class="list-social__image" src="./svg/icon-whatsapp.svg" alt="whatsapp"><span>Обсудить
+            whatsapp</span></a>
       </li>
     </ul>
   </header>
@@ -66,26 +66,29 @@
       <h2 class="visually-hidden">Преимущества</h2>
       <ol class="benefits__list">
         <li class="benefits__item">
-          10+ лет опыта
+          <span>01</span> 10+ лет опыта
         </li>
 
         <li class="benefits__item">
-          Сертифицированные специалисты
+          <span>02</span> Сертифицированные специалисты
         </li>
 
         <li class="benefits__item">
-          Специалисты в штате
+          <span>03</span> Специалисты в штате
         </li>
 
         <li class="benefits__item">
-          Знание сопутствующих технологий
+          <span>04</span> Знание сопутствующих технологий
         </li>
 
         <li class="benefits__item">
-          Широкий кругозор и понимание бизнес-задач
+          <span>05</span> Широкий кругозор и понимание бизнес-задач
+        </li>
+        <li class="benefits__item benefits__item--weight">
+          Работать с нами легко и выгодно :-)
         </li>
       </ol>
-      <span class="benefits__text">Работать с нами легко и выгодно :-)</span>
+
     </section>
     <!-- КОНЕЦ ПРЕИМУЩЕСТВА  -->
 
@@ -94,42 +97,42 @@
       <h2 class="title">Мы предлагаем</h2>
       <ul class="services__list">
         <li class="services__item">
-          <img class="services__icon" src="./svg/update-site.svg" alt="update-site">
+          <img class="services__icon" src="./svg/update-site.svg" alt="обновления-сайт">
           <p class="services__description">Оперативные обновления сайта</p>
         </li>
 
         <li class="services__item">
-          <img class="services__icon" src="./svg/manager.svg" alt="manager">
+          <img class="services__icon" src="./svg/manager.svg" alt="менеджер">
           <p class="services__description">Персональный менеджер</p>
         </li>
 
         <li class="services__item">
-          <img class="services__icon" src="./svg/list-edits.svg" alt="list-edits">
+          <img class="services__icon" src="./svg/list-edits.svg" alt="список-правки">
           <p class="services__description">Полную отчетность по правкам</p>
         </li>
 
         <li class="services__item">
-          <img class="services__icon" src="./svg/update-licenses.svg" alt="update-licenses">
+          <img class="services__icon" src="./svg/update-licenses.svg" alt="обновления-лицензия">
           <p>Обновление лицензий битрикс</p>
         </li>
 
         <li class="services__item">
-          <img class="services__icon" src="./svg/integration-1с.svg" alt="integration-1с">
+          <img class="services__icon" src="./svg/integration-1с.svg" alt="интеграция-1с">
           <p class="services__description">Интеграции из 1С</p>
         </li>
 
         <li class="services__item">
-          <img class="services__icon" src="./svg/service-phone.svg" alt="service-phone">
+          <img class="services__icon" src="./svg/service-phone.svg" alt="сервис-телефон">
           <p class="services__description">Интеграция с внешними сервисами</p>
         </li>
 
         <li class="services__item">
-          <img class="services__icon" src="./svg/list-pen.svg" alt="list-pen">
+          <img class="services__icon" src="./svg/list-pen.svg" alt="лист-ручка">
           <p class="services__description">Технический дизайн и фронтенд работы</p>
         </li>
 
         <li class="services__item">
-          <img class="services__icon" src="./svg/beatle-list.svg" alt="beatle-list">
+          <img class="services__icon" src="./svg/beatle-list.svg" alt="жук-лист">
           <p class="services__description">Лечение от вирусов</p>
         </li>
       </ul>
@@ -141,8 +144,8 @@
       <h2 class="title">Цены</h2>
       <ul class="price__list">
         <li class="price__card">
-          <img class="price__image" src="./svg/check-mark.svg" alt="check-mark">
-          <h2 class="price__subtitle">Работа по задачам</h2>
+          <img class="price__image" src="./svg/check-mark.svg" alt="галочка-отметка">
+          <h3 class="price__service">Работа по задачам</h3>
           <p class="price__description">Вы предоставляете на оценку задачу - мы ее оцениваем, оговариваем все детали и
             оперативно реализуем.</p>
           <span class="price__label">Стоимость нормочаса</span>
@@ -154,8 +157,8 @@
         </li>
 
         <li class="price__card">
-          <img class="price__image" src="./svg/time-sheets.svg" alt="time-sheets">
-          <h2 class="title">Работа по предоплаченным тарифам</h2>
+          <img class="price__image" src="./svg/time-sheets.svg" alt="часы-бумаги">
+          <h3 class="price__service">Работа по предоплаченным тарифам</h3>
           <p class="price__description">Мы оговариваем типовое количество работы в месяц. Мы рекомендуем варианты 5, 10,
             20 и 30 нормочасов. Часы не сгорают.</p>
           <span class="price__label">Стоимость нормочаса</span>
@@ -178,16 +181,20 @@
     <section class="discuss">
       <h2 class="title">Обсудить детали</h2>
       <form class="form" action="#" method="post">
-        <label class="form__label" for="user-name">Как вас зовут: <input type="text" id="user-name" placeholder="Ваше имя"
-            required></label>
-        <label class="form__label" for="user-mail">E-mail: <input type="email" id="user-mail" placeholder="Электронная почта"
-            required></label>
+        <label class="form__label" for="user-name">Как вас зовут: <input type="text" id="user-name"
+            placeholder="Ваше имя" required></label>
+        <label class="form__label" for="user-mail">E-mail: <input type="email" id="user-mail"
+            placeholder="Электронная почта" required></label>
         <label class="form__label" for="user-tel">Телефон: <input type="tel" id="user-tel" placeholder="Ваш телефон"
             required></label>
         <label class="form__label" for="message">Комментарий:</label><textarea id="message">Ваш комментарий</textarea>
-        <input class="form__input" type="checkbox" id="checkbox" required>
-        <label for="checkbox">Я выражаю <a href="#" target="_blank">согласие на обработку персональных данных</a></label>
-        <button class="form__button button" type="submit">Отправить</button>
+        <input class="form__input" type="checkbox" id="user-consent" checked required>Я выражаю <a href="#"
+          target="_blank">согласие на обработку персональных данных</a>
+        <button class="form__button button" type="submit">Отправить <svg width="9" height="14" viewBox="0 0 9 14"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 13L7.5 7L1.5 1" stroke="white" stroke-width="2" />
+          </svg>
+        </button>
       </form>
     </section>
     <!-- КОНЕЦ ОБСУДИТЬ ДЕТАЛИ  -->
@@ -195,9 +202,10 @@
   </main>
   <!-- КОНЕЦ ОСНОВНОЙ КОНТЕНТ  -->
 
+  <script src="./js/main.js"></script>
 </body>
 
 <!-- подключи файл скрипта js  -->
-<script src="./js/main.js"></script>
+
 
 </html>

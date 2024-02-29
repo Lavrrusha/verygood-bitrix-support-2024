@@ -1,9 +1,6 @@
-:root {
-  --colorButton: #5B48FC;
-}
-
 // Базовые стили
 
+@import "./base/vars";
 @import "./base/fonts";
 @import "./base/global";
 
@@ -18,7 +15,11 @@
 
 // Смысловые секции
 
+@import "./sections/header";
 @import "./sections/first-screen";
 @import "./sections/benefits";
 @import "./sections/services";
-@import "./sections/services";
+@import "./sections/price";
+@import "./sections/faq";
+@import "./sections/discuss";
+
