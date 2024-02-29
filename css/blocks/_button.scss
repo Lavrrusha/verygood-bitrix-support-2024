@@ -1,7 +1,9 @@
 .button {
   text-decoration: none;
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   border: none;
   color: #fff;
   font-weight: 700;
@@ -9,5 +11,6 @@
   line-height: 128%;
   border-radius: 32px;
   background: var(--colorButton);
-  padding: 21px 0;
+  width: max-content;
+  padding: 21px 24px;
 }

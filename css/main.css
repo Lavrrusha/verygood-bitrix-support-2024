@@ -79,8 +79,10 @@ input[type=radio].visually-hidden {
 
 .button {
   text-decoration: none;
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   border: none;
   color: #fff;
   font-weight: 700;
@@ -88,7 +90,9 @@ input[type=radio].visually-hidden {
   line-height: 128%;
   border-radius: 32px;
   background: var(--colorButton);
-  padding: 21px 0;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 21px 24px;
 }
 
 .title {
