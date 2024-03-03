@@ -1,0 +1,81 @@
+.first-screen {
+  position: relative;
+  background: #131730;
+  background-image: url(/img/first-screen-BG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 101px;
+  padding-bottom: 224px;
+
+  &__title {
+    width: 855px;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 1.10;
+    color: var(--colorWhite);
+    text-align: left;
+    padding-top: 101px;
+    margin-bottom: 16px;
+  }
+
+  &__title span {
+    color: var(--colorProjectStyle);
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--colorWhite-05);
+    text-align: left;
+    margin-bottom: 35px;
+  }
+
+  &__text span {
+    font-weight: 500;
+    color: var(--colorWhite);
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .first-screen__title {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 1.2;
+  }
+
+  .first-screen__text {
+    font-weight: 300;
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .first-screen__title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.17;
+  }
+
+  .first-screen__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.33;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .first-screen__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.33;
+  }
+
+}

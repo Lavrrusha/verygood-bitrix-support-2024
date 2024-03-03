@@ -5,7 +5,7 @@
   align-items: center;
   gap: 16px;
   border: none;
-  color: #fff;
+  color: var(--colorWhite);
   font-weight: 700;
   font-size: 18px;
   line-height: 128%;
@@ -13,4 +13,8 @@
   background: var(--colorButton);
   width: max-content;
   padding: 21px 24px;
+}
+
+.button:hover {
+  background: #5a48fc9d;
 }

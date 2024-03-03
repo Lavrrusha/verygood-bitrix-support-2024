@@ -1,0 +1,66 @@
+.header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  padding-top: 48px;
+  text-align: center;
+
+  &__top {
+    display: flex;
+  }
+
+  &__logotype {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__phone {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--colorWhite);
+  }
+}
+
+.social-list {
+  margin: 0;
+  padding-left: 16px;
+  display: flex;
+  gap: 16px;
+
+  &__link {
+    display: flex;
+    gap: 12px;
+    text-decoration: none;
+  }
+
+  &__link span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--colorWhite);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 24px;
+    background-color: #1E96C8;
+    width: 232px;
+  }
+
+  &__item--whatsapp {
+    background-color: #43AD45;
+  }
+}
