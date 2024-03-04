@@ -48,14 +48,6 @@ html *::after {
   box-sizing: border-box;
 }
 
-.wrapper {
-  text-align: center;
-  max-width: 1920px;
-  width: 100%;
-  padding: 0 200px;
-  margin: 0 auto;
-}
-
 body {
   margin: 0;
   min-width: 375px;
@@ -169,14 +161,23 @@ input[type=radio].visually-hidden {
   }
 }
 
+.wrapper {
+  max-width: 1585px;
+  width: 100%;
+  padding-inline: 40px;
+  margin: 0 auto;
+}
+
 .header {
   position: fixed;
   right: 0;
   left: 0;
   z-index: 1;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-top: 48px;
-  text-align: center;
+  padding-bottom: 45px;
 }
 .header__top {
   display: flex;
@@ -184,48 +185,49 @@ input[type=radio].visually-hidden {
 .header__logotype {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 .header__social {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 .header__phone {
-  width: 140px;
+  max-width: 140px;
   display: flex;
   align-items: center;
   font-weight: 700;
   font-size: 16px;
-  line-height: 125%;
+  line-height: 1.25;
   color: var(--colorWhite);
 }
 
 .social-list {
+  list-style: none;
   margin: 0;
-  padding-left: 16px;
+  padding: 0;
+  margin-left: 16px;
   display: flex;
   gap: 16px;
 }
 .social-list__link {
   display: flex;
-  gap: 12px;
   text-decoration: none;
-}
-.social-list__link span {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--colorWhite);
-}
-.social-list__item {
-  display: flex;
   align-items: center;
   padding: 10px 15px;
   border-radius: 24px;
   background-color: #1E96C8;
-  width: 232px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--colorWhite);
+  max-width: 232px;
 }
-.social-list__item--whatsapp {
+.social-list__link--whatsapp {
   background-color: #43AD45;
+}
+.social-list__icon {
+  margin-right: 12px;
 }
 
 .first-screen {
@@ -236,9 +238,10 @@ input[type=radio].visually-hidden {
   background-size: cover;
   color: #ffffff;
   min-height: 100vh;
-  width: 100vw;
-  padding-top: 101px;
-  padding-bottom: 224px;
+  max-width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-position: center;
 }
 .first-screen__title {
   width: 855px;
@@ -247,7 +250,7 @@ input[type=radio].visually-hidden {
   line-height: 1.1;
   color: var(--colorWhite);
   text-align: left;
-  padding-top: 101px;
+  padding-top: 100px;
   margin-bottom: 16px;
 }
 .first-screen__title span {

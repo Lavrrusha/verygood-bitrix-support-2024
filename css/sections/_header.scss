@@ -4,8 +4,10 @@
   left: 0;
   z-index: 1;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-top: 48px;
-  text-align: center;
+  padding-bottom: 45px;
 
   &__top {
     display: flex;
@@ -14,53 +16,53 @@
   &__logotype {
     display: flex;
     align-items: center;
+    margin-right: auto;
   }
 
   &__social {
     display: flex;
+    align-items: center;
     margin-left: auto;
   }
 
   &__phone {
-    width: 140px;
+    max-width: 140px;
     display: flex;
     align-items: center;
     font-weight: 700;
     font-size: 16px;
-    line-height: 125%;
+    line-height: 1.25;
     color: var(--colorWhite);
   }
 }
 
 .social-list {
+  list-style: none;
   margin: 0;
-  padding-left: 16px;
+  padding: 0;
+  margin-left: 16px;
   display: flex;
   gap: 16px;
 
   &__link {
     display: flex;
-    gap: 12px;
     text-decoration: none;
-  }
-
-  &__link span {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--colorWhite);
-  }
-
-  &__item {
-    display: flex;
     align-items: center;
     padding: 10px 15px;
     border-radius: 24px;
     background-color: #1E96C8;
-    width: 232px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--colorWhite);
+    max-width: 232px;
   }
 
-  &__item--whatsapp {
+  &__link--whatsapp {
     background-color: #43AD45;
+  }
+
+  &__icon {
+    margin-right: 12px;
   }
 }

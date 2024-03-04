@@ -6,9 +6,10 @@
   background-size: cover;
   color: #ffffff;
   min-height: 100vh;
-  width: 100vw;
-  padding-top: 101px;
-  padding-bottom: 224px;
+  max-width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-position: center;
 
   &__title {
     width: 855px;
@@ -17,7 +18,7 @@
     line-height: 1.10;
     color: var(--colorWhite);
     text-align: left;
-    padding-top: 101px;
+    padding-top: 100px;
     margin-bottom: 16px;
   }
 
