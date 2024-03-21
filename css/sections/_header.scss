@@ -26,6 +26,7 @@
   }
 
   &__phone {
+    text-decoration: none;
     max-width: 140px;
     display: flex;
     align-items: center;
@@ -50,7 +51,7 @@
     align-items: center;
     padding: 10px 15px;
     border-radius: 24px;
-    background-color: #1E96C8;
+    background-color: #1e96c8;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -58,11 +59,52 @@
     max-width: 232px;
   }
 
+  &__link:hover {
+    background-color: #1e95c8c4;
+  }
+
   &__link--whatsapp {
-    background-color: #43AD45;
+    background-color: #43ad45;
+  }
+
+  &__link--whatsapp:hover {
+    background-color: #43ad45bb;
   }
 
   &__icon {
     margin-right: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    right: 240px;
+  }
+
+  .first-screen__title {
+    font-size: 64px;
+    line-height: 1.12;
+    max-width: 680px;
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .first-screen__title {
+    max-width: 448px;
+    font-size: 48px;
+    line-height: 1.17;
+  }
+
+  .first-screen__text {
+
+  }
+}
+
+@media (max-width: 375px) {
+  .first-screen__title {
+    font-size: 16px;
+    line-height: 156%;
+    text-align: center;
   }
 }

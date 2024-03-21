@@ -1,4 +1,5 @@
 :root {
+  --fonts: "Inter", sans-serif;
   --colorButton: #5B48FC;
   --colorProjectStyle: #A4E522;
   --colorText: #131730;
@@ -52,7 +53,7 @@ body {
   margin: 0;
   min-width: 375px;
   font-size: 18px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--fonts);
   position: relative;
   overflow-x: hidden;
   background-color: var(--colorWidth);
@@ -193,6 +194,7 @@ input[type=radio].visually-hidden {
   margin-left: auto;
 }
 .header__phone {
+  text-decoration: none;
   max-width: 140px;
   display: flex;
   align-items: center;
@@ -216,20 +218,51 @@ input[type=radio].visually-hidden {
   align-items: center;
   padding: 10px 15px;
   border-radius: 24px;
-  background-color: #1E96C8;
+  background-color: #1e96c8;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: var(--colorWhite);
   max-width: 232px;
 }
+.social-list__link:hover {
+  background-color: rgba(30, 149, 200, 0.768627451);
+}
 .social-list__link--whatsapp {
-  background-color: #43AD45;
+  background-color: #43ad45;
+}
+.social-list__link--whatsapp:hover {
+  background-color: rgba(67, 173, 69, 0.7333333333);
 }
 .social-list__icon {
   margin-right: 12px;
 }
 
+@media (max-width: 1024px) {
+  .header {
+    right: 240px;
+  }
+  .first-screen__title {
+    font-size: 64px;
+    line-height: 1.12;
+    max-width: 680px;
+    padding-top: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .first-screen__title {
+    max-width: 448px;
+    font-size: 48px;
+    line-height: 1.17;
+  }
+}
+@media (max-width: 375px) {
+  .first-screen__title {
+    font-size: 16px;
+    line-height: 156%;
+    text-align: center;
+  }
+}
 .first-screen {
   position: relative;
   background: #131730;
@@ -333,6 +366,20 @@ input[type=radio].visually-hidden {
   color: var(--colorWhite);
 }
 
+@media (max-width: 1024px) {
+  .benefits__list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .benefits__item {
+    width: 288px;
+  }
+}
+@media (max-width: 768px) {
+  .benefits__item {
+    width: 208px;
+  }
+}
 .services {
   background: var(--colorText);
   padding: 65px 0;

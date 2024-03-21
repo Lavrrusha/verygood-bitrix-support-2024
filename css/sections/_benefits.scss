@@ -35,17 +35,22 @@
   }
 }
 
-
 @media (max-width: 1024px) {
+  .benefits__list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
+  .benefits__item {
+    width: 288px;
+  }
 }
-
 
 @media (max-width: 768px) {
-
+  .benefits__item {
+    width: 208px;
+  }
 }
 
-
 @media (max-width: 375px) {
-  
 }

@@ -14,7 +14,7 @@ body {
   margin: 0;
   min-width: 375px;
   font-size: 18px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--fonts);
   position: relative;
   overflow-x: hidden;
   background-color: var(--colorWidth);
