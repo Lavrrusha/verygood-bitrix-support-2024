@@ -27,7 +27,7 @@
 
   &__phone {
     text-decoration: none;
-    max-width: 140px;
+    width: 140px;
     display: flex;
     align-items: center;
     font-weight: 700;
@@ -56,7 +56,7 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--colorWhite);
-    max-width: 232px;
+    width: 232px;
   }
 
   &__link:hover {
@@ -78,22 +78,19 @@
 
 @media (max-width: 1024px) {
   .header {
-    right: 240px;
   }
 
   .first-screen__title {
-    font-size: 64px;
-    line-height: 1.12;
-    max-width: 680px;
+    font-size: 18px;
+    width: 680px;
     padding-top: 0px;
   }
 }
 
 @media (max-width: 768px) {
   .first-screen__title {
-    max-width: 448px;
-    font-size: 48px;
-    line-height: 1.17;
+    width: 448px;
+    font-size: 18px;
   }
 
   .first-screen__text {
@@ -102,9 +99,28 @@
 }
 
 @media (max-width: 375px) {
+  .first-screen .wrapper {
+    padding-inline: 15px;
+  }
+
   .first-screen__title {
-    font-size: 16px;
-    line-height: 156%;
+    font-size: 32px;
+    line-height: 1.25;
     text-align: center;
+    margin: 0 auto;
+    width: 335px;
+    margin-bottom: 14px;
+  }
+
+  .first-screen__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.56;
+    text-align: center;
+    width: 335px;
+    margin-bottom: 23px;
+  }
+
+  .first-screen .button {
   }
 }

@@ -53,4 +53,32 @@
 }
 
 @media (max-width: 375px) {
+  .benefits .wrapper {
+    padding-inline: 15px;
+  }
+
+  .benefits {
+    text-align: center;
+  }
+
+  .benefits__list {
+    width: 200px;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    gap: 15px;
+    display: grid;
+    align-items: baseline;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services__description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .benefits__item {
+   width: 160px;
+  }
 }
