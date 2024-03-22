@@ -9,6 +9,7 @@
 
   &__box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 33px;
   }
@@ -66,11 +67,25 @@
 }
 
 @media (max-width: 1024px) {
+  .services__box {
+    flex-direction: column;
+  }
+
+  .services .title {
+  }
+
+  .services__list {
+    gap: 20px;
+  }
+
+  .services__item {
+    margin-bottom: 30px;
+    width: 220px;
+  }
 }
 
 @media (max-width: 768px) {
-
-  .services .services__box {
+  .services__box {
     flex-wrap: wrap;
   }
 
@@ -86,9 +101,8 @@
 }
 
 @media (max-width: 375px) {
-
   .services .wrapper {
-    padding-inline: 15px
+    padding-inline: 15px;
   }
 
   .services {
@@ -102,7 +116,7 @@
 
   .services .title {
     margin-bottom: 34px;
-    font-size: 24px
+    font-size: 24px;
   }
 
   .services__box {
