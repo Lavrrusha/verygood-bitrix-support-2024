@@ -1,0 +1,49 @@
+.accordion {
+  background-color: var(--colorBackground);
+  padding-top: 64px;
+  padding-bottom: 115px;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__faq {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.33;
+  }
+
+  &__icon {
+  }
+
+  &__answer {
+  }
+
+  &__body {
+    margin: 0;
+    padding: 0;
+    width: 912px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}

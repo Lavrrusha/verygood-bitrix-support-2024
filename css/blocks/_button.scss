@@ -13,8 +13,11 @@
   background: var(--colorButton);
   width: max-content;
   padding: 21px 24px;
+  transition: all 0.4s ease;
 }
 
 .button:hover {
-  background: #5a48fc9d;
+  transform: scale(1.1);
+  background: #5a48fcd8;
+  opacity: .3;
 }
