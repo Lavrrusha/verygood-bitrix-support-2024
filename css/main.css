@@ -318,6 +318,7 @@ input[type=radio].visually-hidden {
 
 @media (max-width: 1024px) {
   .first-screen__title {
+    width: 680px;
     font-weight: 500;
     font-size: 64px;
     line-height: 1.2;
