@@ -1,10 +1,10 @@
 :root {
   --fonts: "Inter", sans-serif;
-  --colorButton: #5B48FC;
-  --colorProjectStyle: #A4E522;
+  --colorButton: #5b48fc;
+  --colorProjectStyle: #a4e522;
   --colorText: #131730;
   --colorText-08: rgb(19, 23, 48);
-  --colorBackground: #F2F6F9;
+  --colorBackground: #f2f6f9;
   --colorWhite: #ffffff;
   --colorWhite-05: rgb(255, 255, 255);
 }
@@ -143,12 +143,11 @@ input[type=radio].visually-hidden {
   width: max-content;
   padding: 21px 24px;
   transition: all 0.4s ease;
+  cursor: pointer;
 }
 
 .button:hover {
   transform: scale(1.1);
-  background: rgba(90, 72, 252, 0.8470588235);
-  opacity: 0.3;
 }
 
 .title {
@@ -276,6 +275,23 @@ input[type=radio].visually-hidden {
     margin-bottom: 23px;
   }
 }
+@media (max-width: 375px) {
+  .first-screen__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    text-align: center;
+  }
+  .first-screen {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 156%;
+    text-align: center;
+  }
+  .social-list span {
+    display: none;
+  }
+}
 .first-screen {
   position: relative;
   background: #131730;
@@ -330,18 +346,25 @@ input[type=radio].visually-hidden {
 }
 @media (max-width: 768px) {
   .first-screen__title {
+    width: 500px;
     font-weight: 500;
     font-size: 48px;
     line-height: 1.17;
+    margin-bottom: 40px;
   }
   .first-screen__text {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.33;
   }
+  .first-screen__text {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 @media (max-width: 375px) {
   .first-screen__title {
+    width: 500px;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.33;
@@ -618,35 +641,28 @@ input[type=radio].visually-hidden {
   }
 }
 @media (max-width: 768px) {
-  .price .title {
-    margin-bottom: 32px;
-    margin-left: 110px;
-    font-size: 30px;
-  }
   .price {
     padding-top: 34px;
     padding-bottom: 34px;
   }
   .price__box {
     flex-direction: column;
-    border-left: 10px double #f0f0f0;
-    border-right: 10px double #f0f0f0;
+  }
+  .price__description {
+    width: 650px;
   }
   .price .title {
-    margin-bottom: 32px;
-    margin-left: 235px;
     font-size: 34px;
   }
   .price__list {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     gap: 70px;
-    align-items: center;
   }
   .price__name {
     font-size: 30px;
     width: 410px;
+    margin-bottom: 24px;
   }
 }
 @media (max-width: 375px) {
@@ -714,6 +730,10 @@ input[type=radio].visually-hidden {
   display: flex;
   flex-direction: column;
 }
+.accordion__item {
+  border-top: 1px solid var(--colorText);
+  border-bottom: 1px solid var(--colorText);
+}
 .accordion__head {
   display: flex;
   justify-content: space-between;
@@ -722,6 +742,8 @@ input[type=radio].visually-hidden {
 .accordion__title {
   padding: 0;
   margin: 0;
+  padding-top: 22px;
+  padding-bottom: 25px;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.33;
@@ -729,12 +751,67 @@ input[type=radio].visually-hidden {
 .accordion__body {
   margin: 0;
   padding: 0;
-  width: 912px;
+  width: 961px;
   font-weight: 300;
   font-size: 18px;
   line-height: 1.33;
+  padding: 0 40px 35px;
 }
 
+@media (max-width: 1024px) {
+  .accordion__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .accordion__box .title {
+    padding-bottom: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .accordion__body {
+    padding: 0 25px 30px;
+    font-size: 16px;
+    width: 723px;
+  }
+}
+@media (max-width: 375px) {
+  .accordion {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .accordion__box .title {
+    padding: 0;
+  }
+  .accordion__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+    padding-top: 14px;
+    padding-bottom: 20px;
+    width: 300px;
+  }
+  .accordion__body {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.56;
+    width: 338px;
+  }
+  .accordion .wrapper {
+    padding-inline: 15px;
+  }
+  .accordion__faq {
+    padding: 0;
+  }
+}
+.discuss {
+  background: var(--colorText);
+  padding-top: 64px;
+  padding-bottom: 100px;
+}
+.discuss__box .title {
+  color: var(--colorWhite);
+  text-align: left;
+}
 .discuss__box {
   display: flex;
   justify-content: space-between;

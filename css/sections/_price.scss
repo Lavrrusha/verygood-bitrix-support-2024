@@ -88,9 +88,7 @@
 }
 
 @media (max-width: 1024px) {
-
   .price {
-
   }
 
   .price .title {
@@ -103,12 +101,6 @@
 }
 
 @media (max-width: 768px) {
-  .price .title {
-    margin-bottom: 32px;
-    margin-left: 110px;
-    font-size: 30px;
-  }
-
   .price {
     padding-top: 34px;
     padding-bottom: 34px;
@@ -116,27 +108,27 @@
 
   .price__box {
     flex-direction: column;
-    border-left: 10px double #f0f0f0;
-    border-right: 10px double #f0f0f0;
+  }
+
+  .price__description {
+    width: 650px;
+
   }
 
   .price .title {
-    margin-bottom: 32px;
-    margin-left: 235px;
     font-size: 34px;
   }
 
   .price__list {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     gap: 70px;
-    align-items: center;
   }
 
   .price__name {
     font-size: 30px;
     width: 410px;
+    margin-bottom: 24px;
   }
 }
 

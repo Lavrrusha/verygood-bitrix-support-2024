@@ -15,7 +15,7 @@
     width: 855px;
     font-weight: 500;
     font-size: 80px;
-    line-height: 1.10;
+    line-height: 1.1;
     color: var(--colorWhite);
     text-align: left;
     padding-top: 100px;
@@ -40,7 +40,6 @@
     font-weight: 500;
     color: var(--colorWhite);
   }
-
 }
 
 @media (max-width: 1024px) {
@@ -57,12 +56,13 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .first-screen__title {
+    width: 500px;
     font-weight: 500;
     font-size: 48px;
     line-height: 1.17;
+    margin-bottom: 40px;
   }
 
   .first-screen__text {
@@ -70,14 +70,18 @@
     font-size: 24px;
     line-height: 1.33;
   }
-}
 
+  .first-screen__text {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
 
 @media (max-width: 375px) {
   .first-screen__title {
+    width: 500px;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.33;
   }
-
 }

@@ -16,6 +16,8 @@
   }
 
   &__item {
+    border-top: 1px solid var(--colorText);
+    border-bottom: 1px solid var(--colorText);
   }
 
   &__head {
@@ -27,6 +29,8 @@
   &__title {
     padding: 0;
     margin: 0;
+    padding-top: 22px;
+    padding-bottom: 25px;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.33;
@@ -41,9 +45,64 @@
   &__body {
     margin: 0;
     padding: 0;
-    width: 912px;
+    width: 961px;
     font-weight: 300;
     font-size: 18px;
     line-height: 1.33;
+    padding: 0 40px 35px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .accordion__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accordion__box .title {
+    padding-bottom: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion__body {
+    padding: 0 25px 30px;
+    font-size: 16px;
+    width: 723px;
+  }
+}
+
+@media (max-width: 375px) {
+  .accordion {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .accordion__box .title {
+    padding: 0;
+  }
+
+  .accordion__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+    padding-top: 14px;
+    padding-bottom: 20px;
+    width: 300px;
+  }
+
+  .accordion__body {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.56;
+    width: 338px;
+  }
+
+  .accordion .wrapper {
+    padding-inline: 15px;
+  }
+
+  .accordion__faq {
+    padding: 0;
   }
 }

@@ -95,7 +95,6 @@
   }
 
   .first-screen__text {
-
   }
 }
 
@@ -123,5 +122,28 @@
   }
 
   .first-screen .button {
+  }
+}
+
+@media (max-width: 375px) {
+  .first-screen__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .first-screen{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 156%;
+    text-align: center;
+  }
+
+  .social-list span {
+    display: none;
+  }
+
+  .social-list__link {
   }
 }
