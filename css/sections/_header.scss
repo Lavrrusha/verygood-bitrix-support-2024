@@ -79,71 +79,17 @@
 
 @media (max-width: 1024px) {
   .header {
+    
   }
 
-  .first-screen__title {
-    font-size: 18px;
-    width: 680px;
-    padding-top: 0px;
-  }
 }
 
 @media (max-width: 768px) {
-  .first-screen__title {
-    width: 448px;
-    font-size: 18px;
-  }
 
-  .first-screen__text {
-  }
 }
 
-@media (max-width: 375px) {
-  .first-screen .wrapper {
-    padding-inline: 15px;
-  }
 
-  .first-screen__title {
-    font-size: 32px;
-    line-height: 1.25;
-    text-align: center;
-    margin: 0 auto;
-    width: 335px;
-    margin-bottom: 14px;
-  }
 
-  .first-screen__text {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.56;
-    text-align: center;
-    width: 335px;
-    margin-bottom: 23px;
-  }
-
-  .first-screen .button {
-  }
-}
 
 @media (max-width: 375px) {
-  .first-screen__title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.25;
-    text-align: center;
-  }
-
-  .first-screen{
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 156%;
-    text-align: center;
-  }
-
-  .social-list span {
-    display: none;
-  }
-
-  .social-list__link {
-  }
 }

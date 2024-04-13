@@ -1,7 +1,7 @@
 .first-screen {
   position: relative;
   background: #131730;
-  background-image: url(/img/first-screen-BG.jpg);
+  background-image: url(../img/first-screen-BG.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -48,15 +48,19 @@
     font-weight: 500;
     font-size: 64px;
     line-height: 1.2;
+    width: 680px;
+    padding-top: 100px;
   }
 
   .first-screen__text {
     font-weight: 300;
     font-size: 18px;
+    margin: 0;
   }
 }
 
 @media (max-width: 768px) {
+
   .first-screen__title {
     width: 500px;
     font-weight: 500;
@@ -74,14 +78,33 @@
   .first-screen__text {
     font-size: 18px;
     font-weight: 500;
+    margin-bottom: 40px;
   }
 }
 
 @media (max-width: 375px) {
+  .first-screen {
+  }
+
   .first-screen__title {
-    width: 500px;
+    padding-top: 209px;
+    width: 335px;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 32px;
     line-height: 1.33;
+    text-align: center;
+  }
+
+  .first-screen__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.56;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 23px;
+  }
+
+  .first-screen__text span {
+    font-weight: 500;
   }
 }

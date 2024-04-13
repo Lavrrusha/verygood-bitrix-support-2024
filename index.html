@@ -520,21 +520,26 @@
         <div class="discuss__box">
       <h2 class="title">Обсудить детали</h2>
       <form class="form" action="#" method="post">
-        <label class="form__label" for="user-name">Как вас зовут: <input type="text" id="user-name"
+        <label class="form__name" for="user-name">Как вас зовут: <input type="text" id="user-name"
             placeholder="Ваше имя" required></label>
+            <div class="form__label__flex">
         <label class="form__label" for="user-mail">E-mail: <input type="email" id="user-mail"
             placeholder="Электронная почта" required></label>
         <label class="form__label" for="user-tel">Телефон: <input type="tel" id="user-tel" placeholder="Ваш телефон"
             required></label>
-        <label class="form__label" for="message">Комментарий:</label><textarea id="message">Ваш комментарий</textarea>
+          </div>
+        <label class="form__message" for="message">Комментарий:<textarea class="form__textarea" rows="1"  id="message">Ваш комментарий</textarea>
+        </label>
+          <div class="form__box">
         <input class="form__input" type="checkbox" id="user-consent" checked required>
-        <label for="user-consent">Я выражаю <a href="#" target="_blank">согласие на обработку персональных
+        <label class="form__consent" for="user-consent">Я выражаю <a href="#" target="_blank">согласие на обработку персональных
             данных</a></label>
-        <button class="form__button button" type="submit">Отправить <svg width="9" height="14" viewBox="0 0 9 14"
+        <button class="form__button button" type="submit">Отправить<svg width="9" height="14" viewBox="0 0 9 14"
             fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.5 13L7.5 7L1.5 1" stroke="white" stroke-width="2" />
           </svg>
         </button>
+      </div>
       </form>
     </div>
   </div>

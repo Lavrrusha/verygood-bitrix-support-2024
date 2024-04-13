@@ -1,6 +1,8 @@
 # verygood-bitrix-support-2024
  Техническая поддержка сайтов  на 1C Битрикс Лендинг
 
+## Ссылка на проект https://lavrrusha.github.io/verygood-bitrix-support-2024/
+
 ## Общее
 
 Ссылка на макет: https://www.figma.com/file/HGvEhmtEBX3bkmjTcH6Rjj/very-good-(%D0%9E%D0%BB%D0%B5%D1%81%D1%8F)?type=design&node-id=0%3A1&mode=design&t=SGKbQZuIE8mjh6zH-1
@@ -109,4 +111,4 @@
 2. Создай файл бэм блока title и по аналогии с кнопкой пропиши стили, подключи в основной стилевой файл.
 3. в папке css\sections создай файлы для каждой смысловой секции, которую ты разметила и подключит в основной стилевой файл.
 
-# Ссылка на проект https://lavrrusha.github.io/verygood-bitrix-support-2024/
+
